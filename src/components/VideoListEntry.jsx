@@ -10,6 +10,16 @@ var VideoListEntry = () => (
   </div>
 );
 
+// class VideoListEntry extends React.Component {
+//   constructor(props) {
+//     super(props);
+//   }
+//   render() {
+//     return <div><h5><em>{this.props.entry}</em> view goes here</h5></div>
+//   }
+// }
+
+
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
 VideoListEntry.propTypes = {
@@ -19,3 +29,4 @@ VideoListEntry.propTypes = {
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 export default VideoListEntry;
+
