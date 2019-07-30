@@ -1,7 +1,7 @@
 import Search from './Search.js';
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
-
+import exampleVideoData from '../data/exampleVideoData.js';
 // var App = () => (
 //   <div>
 //     <nav className="navbar">
@@ -24,7 +24,6 @@ import VideoPlayer from './VideoPlayer.js';
 var App = () => (
   <div>
     <nav className="navbar">
-    (conso)
       <div className="col-md-6 offset-md-3">
         <Search />
       </div>
@@ -34,7 +33,7 @@ var App = () => (
         <VideoPlayer />
       </div>
       <div className="col-md-5">
-        <VideoList />
+        <VideoList videos={exampleVideoData}/>
       </div>
     </div>
   </div>
