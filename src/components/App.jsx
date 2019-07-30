@@ -24,6 +24,7 @@ import VideoPlayer from './VideoPlayer.js';
 var App = () => (
   <div>
     <nav className="navbar">
+    (conso)
       <div className="col-md-6 offset-md-3">
         <Search />
       </div>

@@ -1,23 +1,24 @@
-// import VideoListEntry from './components/VideoListEntry.jsx';
-// import exampleVideoData from '../data/exampleVideoData.js';
+import VideoListEntry from './VideoListEntry.js';
+ import exampleVideoData from '../data/exampleVideoData.js';
+// var VideoList = () => (
+//   <div className="video-list">
+//     <div><h5><em>videoListEntry</em> view goes here</h5></div>
+//     <div><h5><em>videoListEntry</em> view goes here</h5></div>
+//     <div><h5><em>videoListEntry</em> view goes here</h5></div>
+//     <div><h5><em>videoListEntry</em> view goes here</h5></div>
+//     <div><h5><em>videoListEntry</em> view goes here</h5></div>
+//   </div>
+// );
+
+
+
 var VideoList = () => (
   <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    {exampleVideoData.map(entry => (
+    <VideoListEntry />
+  ))}
   </div>
-);
-
-
-// var VideoList = props => {
-//   <div className="video-list">
-//     {props.entries.map(entry => (
-//     <VideoListEntry entry={entry}/>
-//   ))}
-//   </div>
-// };
+)
 
 // VideoList = props => (
 //   <div>
