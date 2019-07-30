@@ -21,7 +21,7 @@ import exampleVideoData from '../data/exampleVideoData.js';
 //   </div>
 // );
 
-var App = (prop) => (
+var App = () => (
   <div>
     <nav className="navbar">
       <div className="col-md-6 offset-md-3">
@@ -30,7 +30,7 @@ var App = (prop) => (
     </nav>
     <div className="row">
       <div className="col-md-7">
-        <VideoPlayer video={prop.video}/>
+        <VideoPlayer video={exampleVideoData[0]}/>
       </div>
       <div className="col-md-5">
         <VideoList videos={exampleVideoData}/>
